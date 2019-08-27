@@ -1,31 +1,120 @@
-// Navigation code here
-@import "variables.less";
-.nav-container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    background-color: @nav-bg;
-    height: 80px;
-h1{
-    font-size: 4.0rem;
-    margin: 2px 0 10px 0;
 
+.codrops-top {
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    font-size: 11px;
+    width: 100%;
+    padding: 4px;
+    background: #000;
+    opacity: 0.9;
+    /* text-transform: uppercase; */
+    z-index: 9999;
+    position: relative;
+    -moz-box-shadow: 1px 0px 2px #000;
+    -webkit-box-shadow: 1px 0px 2px #000;
+    box-shadow: 1px 0px 2px #000;
 }
-   
+
+.codrops-top img {
+    width: 60;
+    height: 60px;
 }
-.nav-container nav{
+
+.codrops-top h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    line-height: 20px;
+    margin: 5px;
+}
+
+.codrops-top p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.0rem;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.codrops-top a {
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    color: #ddd;
+    display: block;
+    margin: 4px;
+    float: left;
+}
+
+.codrops-top a:hover {
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid white;
+}
+
+.codrops-top span.right {
+    float: right;
+}
+
+.codrops-top span.right a {
+    float: none;
+    display: inline;
+}
+
+.codrops-top .nav-container {
     display: flex;
-    width: 60%;
     flex-direction: row;
-    margin: 6px 0 10px 0;
+    align-items: center;
     justify-content: space-between;
-    a{
-        text-decoration: none;
-        font-size: 1.4rem;
-        color: @nav-font;
+}
+
+.codrops-top .nav-container .logo-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+    .codrops-top h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 1.5rem;
+        /* line-height: 20px; */
+        margin: 5px;
+    }
+    .codrops-top p {
+        font-family: 'Dancing Script', cursive;
+        font-size: 0.8rem;
+        line-height: 20px;
+        margin: 10px;
+    }
+    .codrops-top .nav-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .codrops-top a {
+        color: #fff;
+        font-size: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid white;
+        padding: 0px 10px;
+        letter-spacing: 1px;
+        color: #ddd;
+        display: block;
+        margin: 2px;
+        float: left;
+    }
+    .codrops-top a:hover {
+        font-size: 0.5rem;
+    }
+    .codrops-top img {
+        display: none;
     }
 }
-
