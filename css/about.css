@@ -344,6 +344,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .dev-bio {
+    height: 100%;
     width: 100%;
     margin: 5px;
   }
@@ -352,6 +353,9 @@ body {
   .dev-bio {
     display: none;
   }
+}
+.dev-acct {
+  font-size: 2rem;
 }
 @media screen and (max-width: 800px) {
   .codrops-top h1 {
